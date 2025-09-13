@@ -2,11 +2,9 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import ceoPhoto from "@/assets/ceo-photo.jpg";
 import ChatbotSlideIn from "@/components/ChatbotSlideIn";
 import { FaPhone, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
-import { DialogContent, DialogHeader } from '@/components/ui/dialog';
-import { Dialog, DialogTitle } from "@radix-ui/react-dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 const About = () => {
   const [open, setOpen] = useState(false);
@@ -14,6 +12,7 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <Header />
+
       <main>
         {/* Hero Section */}
         <section className="pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-hero relative overflow-hidden">
@@ -60,7 +59,7 @@ const About = () => {
               <div className="relative animate-scale-in order-1 lg:order-2">
                 <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-2xl opacity-30 animate-pulse-glow"></div>
                 <img
-                  src="/src/assets/Screenshot 2025-09-04 140721.png"
+                  src="/public/assets/Screenshot 2025-09-04 140721.png"
                   alt="LiveGood leadership team"
                   className="relative z-10 w-full rounded-3xl shadow-deep border-4 border-primary/20"
                 />
@@ -147,18 +146,18 @@ const About = () => {
             </div>
           </div>
         </section>
-<section className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
-  <div className="container mx-auto text-center">
-    <img
-      src="/src/assets/i.webp" // այստեղ տեղադրիր քո նկարի path-ը
-      alt="Описание изображения"
-      className="mx-auto rounded-3xl shadow-xl w-full max-w-7xl"
-    />
-    {/* <p className="mt-6 text-xl text-muted-foreground max-w-3xl mx-auto">
-      Здесь можно разместить описание изображения, интересные факты или мотивационное сообщение для пользователей.
-    </p> */}
-  </div>
-</section>
+
+        {/* Image Section */}
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
+          <div className="container mx-auto text-center">
+            <img
+              src="/public/assets/i.webp"
+              alt="Описание изображения"
+              className="mx-auto rounded-3xl shadow-xl w-full max-w-7xl"
+            />
+          </div>
+        </section>
+
         {/* Call to Action */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-hero relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-mesh opacity-40"></div>
@@ -173,87 +172,57 @@ const About = () => {
                 Присоединяйтесь к нам, чтобы жить финансово независимо и сохранять здоровье на каждом этапе жизни.
               </p>
 
-            <div className="text-center lg:text-left animate-scale-in">
-          
-            
-            <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-center">
-              {/* Popup Button */}
-              <Button
-                size="lg"
-                onClick={() => setOpen(true)}
-                className="bg-accent text-accent-foreground hover:bg-accent/90 hover:shadow-deep transition-all duration-500 text-xl px-12 py-6 rounded-full shadow-elegant hover:scale-105"
-              >
-Свяжитесь с нами              </Button>
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                {/* Popup Button */}
+                <Button
+                  size="lg"
+                  onClick={() => setOpen(true)}
+                  className="bg-accent text-accent-foreground hover:bg-accent/90 hover:shadow-deep transition-all duration-500 text-xl px-12 py-6 rounded-full shadow-elegant hover:scale-105"
+                >
+                  Свяжитесь с нами
+                </Button>
 
-              {/* Dialog */}
-              <Dialog open={open} onOpenChange={setOpen}>
-              <DialogContent className="max-w-md rounded-3xl shadow-2xl border border-accent/30 bg-gradient-to-b from-white/90 to-accent/10 backdrop-blur-xl p-8">
-  <DialogHeader className="text-center space-y-2">
-    <DialogTitle className="text-3xl font-bold bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent">
-      Свяжитесь с нами, чтобы получить подробную информацию 👇
-    </DialogTitle>
-    <p className="text-primary-foreground/70 text-lg">
-    </p>
-  </DialogHeader>
+                {/* Dialog */}
+                <Dialog open={open} onOpenChange={setOpen}>
+                  <DialogContent className="max-w-md rounded-3xl shadow-2xl border border-accent/30 bg-gradient-to-b from-white/90 to-accent/10 backdrop-blur-xl p-8">
+                    <DialogHeader className="text-center space-y-2">
+                      <DialogTitle className="text-3xl font-bold bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent">
+                        Свяжитесь с нами, чтобы получить подробную информацию 👇
+                      </DialogTitle>
+                    </DialogHeader>
 
-  <div className="mt-6 space-y-4 text-lg">
-   {/* Telegram */}
-    <a
-      href="https://t.me/+3RTG48rh-bZlMzUy"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center gap-3 p-3 rounded-xl bg-blue-50 hover:bg-blue-100 transition"
-    >
-      <FaTelegramPlane className="text-blue-500 text-2xl" />
-      <span className="font-medium text-blue-600">LiveGood Telegram</span>
-    </a>
+                    <div className="mt-6 space-y-4 text-lg">
+                      <a
+                        href="https://t.me/+3RTG48rh-bZlMzUy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 p-3 rounded-xl bg-blue-50 hover:bg-blue-100 transition"
+                      >
+                        <FaTelegramPlane className="text-blue-500 text-2xl" />
+                        <span className="font-medium text-blue-600">LiveGood Telegram</span>
+                      </a>
 
-  <a
-  href="https://wa.me/37493097970" // Ամբողջական international format
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center gap-3 p-3 rounded-xl bg-green-50 hover:bg-green-100 transition"
->
-  <FaWhatsapp className="text-green-500 text-2xl" />
-  <span className="font-medium text-green-600">37493097970</span>
-</a>
+                      <a
+                        href="https://wa.me/37493097970"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 p-3 rounded-xl bg-green-50 hover:bg-green-100 transition"
+                      >
+                        <FaWhatsapp className="text-green-500 text-2xl" />
+                        <span className="font-medium text-green-600">37493097970</span>
+                      </a>
 
-    <div className="flex items-center gap-3 p-3 rounded-xl bg-gray-50">
-  <FaPhone className="text-gray-700 text-2xl" />
-  <span className="font-medium text-gray-800">+37493097970</span>
-</div>
-  </div>
-</DialogContent>
-
-              </Dialog>
-
-              {/* Secondary button */}
-              {/* <Button 
-                variant="outline" 
-                size="lg"
-                className="border-2 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm text-xl px-12 py-6 rounded-full hover:border-accent hover:text-accent transition-all duration-500 hover:scale-105"
-              >
-                Learn More
-              </Button> */}
-            </div>
-
-
-
-
-
-
-
-
-
-
-            
-          </div>
+                      <div className="flex items-center gap-3 p-3 rounded-xl bg-gray-50">
+                        <FaPhone className="text-gray-700 text-2xl" />
+                        <span className="font-medium text-gray-800">+37493097970</span>
+                      </div>
+                    </div>
+                  </DialogContent>
+                </Dialog>
+              </div>
             </div>
           </div>
         </section>
-        {/* Image with caption Section */}
-
-
       </main>
 
       <Footer />

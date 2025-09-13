@@ -1,13 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import good from "@/assets/good.png";
-import leaders from "@/assets/leaders.png";
-
-// import nutritionFeature from "@/assets/nutrition-feature-2.jpg";
-import comand from "@/assets/comand.png";
-
-import technologyFeature from "@/assets/technology-feature-3.jpg";
 import ChatbotSlideIn from "@/components/ChatbotSlideIn";
 
 const Features = () => {
@@ -18,7 +11,7 @@ const Features = () => {
       subtitle: "Everything You Need in One Place",
       description:
         "Каждый раз, когда новый человек присоединяется к компании по твоей уникальной ссылке и оплачивает членский взнос, ты сразу получаешь бонус на свой счет.",
-      image: good,
+      image: "/assets/good.png",
       gradient: "from-primary to-primary-glow",
       benefits: [
         "С $40 можно получить до 50% ($20) мгновенно.",
@@ -42,7 +35,7 @@ const Features = () => {
       subtitle: "Сильная команда — стабильный доход",
       description:
         "Бонусы соответствия (Matching Bonuses) позволяют тебе получать процент от доходов всей команды, мотивируя строить сильную структуру и поддерживать участников.",
-      image: comand,
+      image: "/assets/comand.png",
       gradient: "from-green-500 to-emerald-400",
       benefits: [
         "Получаешь процент от доходов своей команды.",
@@ -66,7 +59,7 @@ const Features = () => {
       subtitle: "Признание, бонусы и новые вершины",
       description:
         "Эта категория бонусов создана для лидеров и активных партнёров. Чем выше твой уровень и вклад в команду, тем больше привилегий и дополнительных доходов ты получаешь.",
-      image: leaders,
+      image: "/assets/leaders.png",
       gradient: "from-purple-500 to-pink-400",
       benefits: [
         "Бонусы для инфлюенсеров: за крупный объём продаж ($2,500 и выше) начисляются дополнительные бонусы.",
@@ -134,8 +127,7 @@ const Features = () => {
                 Бонусы и Преимущества для Тебя
               </h1>
               <p className="text-2xl text-primary-foreground/90 max-w-4xl mx-auto leading-relaxed">
-                Заметный доход, командная поддержка и уникальные возможности —
-                на каждом шаге твоего развития
+                Заметный доход, командная поддержка и уникальные возможности — на каждом шаге твоего развития
               </p>
             </div>
           </div>
@@ -158,9 +150,7 @@ const Features = () => {
                 }`}
               >
                 <div
-                  className={`${
-                    index % 2 === 1 ? "lg:order-2" : ""
-                  } animate-fade-in`}
+                  className={`${index % 2 === 1 ? "lg:order-2" : ""} animate-fade-in`}
                 >
                   <div className="mb-6">
                     <span className="text-sm font-semibold text-primary uppercase tracking-wider">
@@ -189,7 +179,6 @@ const Features = () => {
                     ))}
                   </div>
 
-                  {/* Matrix Info */}
                   {feature.matrixInfo && (
                     <div className="mt-8">
                       <h3 className="text-2xl font-semibold text-foreground mb-4">
@@ -198,24 +187,17 @@ const Features = () => {
                       <ul className="space-y-3">
                         {feature.matrixInfo.details.map((detail, idx) => (
                           <li key={idx} className="flex items-start gap-3">
-                            <span className="flex-shrink-0 text-primary text-lg">
-                              ✔
-                            </span>
-                            <span className="text-lg text-muted-foreground">
-                              {detail}
-                            </span>
+                            <span className="flex-shrink-0 text-primary text-lg">✔</span>
+                            <span className="text-lg text-muted-foreground">{detail}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
                   )}
 
-                  {/* Extra Info */}
                   {feature.extra && (
                     <div className="mt-8">
-                      <h3 className="text-2xl font-semibold text-foreground mb-4">
-                        {feature.extra.title}
-                      </h3>
+                      <h3 className="text-2xl font-semibold text-foreground mb-4">{feature.extra.title}</h3>
                       <ul className="space-y-3">
                         {feature.extra.points.map((point, idx) => (
                           <li key={idx} className="flex items-start gap-3">
@@ -224,9 +206,7 @@ const Features = () => {
                             >
                               <div className="w-2 h-2 bg-white rounded-full"></div>
                             </div>
-                            <span className="text-lg text-muted-foreground">
-                              {point}
-                            </span>
+                            <span className="text-lg text-muted-foreground">{point}</span>
                           </li>
                         ))}
                       </ul>
@@ -242,9 +222,7 @@ const Features = () => {
                 </div>
 
                 <div
-                  className={`${
-                    index % 2 === 1 ? "lg:order-1" : ""
-                  } relative animate-scale-in`}
+                  className={`${index % 2 === 1 ? "lg:order-1" : ""} relative animate-scale-in`}
                 >
                   <div
                     className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} rounded-3xl blur-2xl opacity-30 animate-pulse-glow`}
@@ -268,10 +246,10 @@ const Features = () => {
           <div className="container mx-auto relative z-10">
             <div className="text-center mb-16 animate-fade-in">
               <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 bg-gradient-primary bg-clip-text text-transparent">
-Принятие решения — значит двигаться вперёд.
+                Принятие решения — значит двигаться вперёд.
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Не жди идеального момента. Начни сейчас — и идеальный момент придёт вместе с тобой.
+                Не жди идеального момента. Начни сейчас — и идеальный момент придёт вместе с тобой.
               </p>
             </div>
 

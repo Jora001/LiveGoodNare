@@ -1,103 +1,134 @@
-import healthFeature from "@/assets/health-feature-1.jpg";
-import nutritionFeature from "@/assets/nutrition-feature-2.jpg"; // <-- այստեղ պետք է .png լինի
-import technologyFeature from "@/assets/technology-feature-3.jpg";
+import { useState } from "react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import ChatbotSlideIn from "@/components/ChatbotSlideIn";
 
+const About = () => {
+  const [open, setOpen] = useState(false);
 
-const features = [
-  {
-    id: 1,
-    title: "BIT System Integration",
-    description:
-      "Раскройте потенциал цифровой трансформации с BIT System – инновационные решения и умные технологии, созданные для оптимизации вашего бизнеса, упрощения процессов и открытия новых возможностей для роста.",
-    image: healthFeature,
-    gradient: "from-primary to-primary-glow",
-  },
-  {
-    id: 2,
-    title: "Здоровье и уход",
-    description:
-      "Откройте для себя наши продукты для здоровья и личного ухода, созданные для полноценного питания, защиты организма и улучшения качества вашей жизни на каждый день.",
-    image: nutritionFeature,
-    gradient: "from-secondary to-accent",
-  },
-  {
-    id: 3,
-    title: "Обучение и развитиe",
-    description:
-      "Получайте постоянное онлайн и оффлайн бесплатное обучение для развития профессиональных навыков, открытия новых возможностей и обеспечения личного и бизнес-роста.",
-    image: technologyFeature,
-    gradient: "from-secondary to-primary",
-  },
-];
-
-const FeaturesSection = () => {
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/5 relative overflow-hidden">
-      {/* Background decorations */}
-      <div className="absolute inset-0 bg-gradient-mesh opacity-40"></div>
-      <div className="absolute top-0 left-1/4 w-64 h-64 bg-accent/20 rounded-full blur-3xl animate-pulse-glow"></div>
+    <div className="min-h-screen">
+      <Header />
+      <main>
+        {/* Hero Section */}
+        <section className="pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-hero relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-mesh opacity-60"></div>
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-glow"></div>
 
-      <div className="container mx-auto relative z-10">
-        {/* Section header */}
-        <div className="text-center mb-20 animate-fade-in">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 bg-gradient-primary bg-clip-text text-transparent">
-            Live Good на сегодняшний день занимает первое место среди сетевых компаний по уровню доверия.
-          </h2>
-          <p className="text-2xl text-muted-foreground max-w-4xl mx-auto font-light">
-            Это подтверждается данными на сайте <strong>Business For Home</strong> и может быть проверено через любые другие авторитетные источники.
-          </p>
-        </div>
+          <div className="container mx-auto relative z-10">
+            <div className="text-center mb-16 animate-fade-in">
+              <h1 className="text-5xl sm:text-6xl font-bold mb-8 bg-gradient-to-r from-green-700 via-green-500 to-green-900 bg-clip-text text-transparent animate-pulse">
+                Зарастаем вместе с LiveGood
+              </h1>
+              <p className="text-2xl text-white max-w-4xl mx-auto leading-relaxed">
+                Постоянная поддержка, образовательные программы и марафоны для роста и успеха сообщества.
+              </p>
+            </div>
+          </div>
+        </section>
 
-        {/* Feature cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {features.map((feature, index) => (
-            <div
-              key={feature.id}
-              className="group relative bg-gradient-glass backdrop-blur-sm rounded-3xl overflow-hidden shadow-elegant hover:shadow-deep transition-all duration-700 animate-scale-in border border-border/20 hover:border-primary/30"
-              style={{ animationDelay: `${index * 200}ms` }}
-            >
-              <div className="relative h-82 overflow-hidden">
-                <img
-                  src={feature.image}
-                  alt={`${feature.title} - Premium health and wellness solutions`}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div
-                  className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-50 group-hover:opacity-60 transition-opacity duration-500`}
-                ></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-              </div>
-
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-foreground mb-6 group-hover:text-primary transition-colors duration-500">
-                  {feature.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed text-lg">{feature.description}</p>
-                <div className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="h-1 w-12 bg-gradient-primary rounded-full"></div>
+        {/* Online Marathon Section */}
+        <section className="py-24 px-4 sm:px-6 lg:px-8 bg-background relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-mesh opacity-20"></div>
+          <div className="container mx-auto relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div className="animate-fade-in order-2 lg:order-1">
+                <h2 className="text-4xl font-bold text-foreground mb-8 bg-gradient-primary bg-clip-text text-transparent">
+                  Онлайн-марафоны LiveGood
+                </h2>
+                <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+                  <p>Компания LiveGood постоянно организует онлайн-марафоны...</p>
+                  <p>Наша команда верит, что такое сотрудничество и обучение укрепляют сообщество...</p>
+                  <p>Этот процесс объединяет людей из разных стран...</p>
                 </div>
               </div>
 
-              {/* Glowing border effect */}
-              <div className="absolute inset-0 border-2 border-transparent group-hover:border-primary/30 rounded-3xl transition-all duration-500"></div>
-              <div className="absolute -inset-1 bg-gradient-primary rounded-3xl blur opacity-0 group-hover:opacity-20 transition-opacity duration-500 -z-10"></div>
+              <div className="relative animate-scale-in order-1 lg:order-2">
+                <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-2xl opacity-30 animate-pulse-glow"></div>
+                <img
+                  src="/assets/Screenshot.png" // Նկարն տեղադրիր public/assets
+                  alt="LiveGood leadership team"
+                  className="relative z-10 w-full rounded-3xl shadow-deep border-4 border-primary/20"
+                />
+              </div>
             </div>
-          ))}
-        </div>
+          </div>
+        </section>
 
-        {/* Animated LiveGood logo / CTA */}
-       <div className="text-center mt-20 animate-fade-in flex justify-center items-center gap-4">
-  <h1 className="text-6xl sm:text-7xl md:text-8xl font-extrabold text-green-500 animate-scale-in">
-    LiveGood
-  </h1>
-  <span className="text-6xl sm:text-7xl md:text-8xl font-extrabold text-green-400 animate-pulse">
-    ∞
-  </span>
-</div>
+        {/* Values Section */}
+        <section className="py-24 px-4 sm:px-6 lg:px-8 bg-background relative overflow-hidden">
+          <div className="container mx-auto">
+            <div className="text-center mb-16 animate-fade-in">
+              <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 bg-gradient-primary bg-clip-text text-transparent">
+                Присоединяйтесь к нам
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Что изменится и какие преимущества вы получите
+              </p>
+            </div>
 
-      </div>
-    </section>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                {
+                  title: "Видение и рост",
+                  description: "Станьте частью мощной команды...",
+                  gradient: "from-primary to-primary-glow",
+                },
+                {
+                  title: "Прозрачность и рост дохода",
+                  description: "Вы получите активный или пассивный доход...",
+                  gradient: "from-secondary to-accent",
+                },
+                {
+                  title: "Выгода от больших скидок",
+                  description: "Присоединившись к нам, вы сможете пользоваться нашим ассортиментом...",
+                  gradient: "from-accent to-secondary",
+                },
+              ].map((value, index) => (
+                <div
+                  key={index}
+                  className="group bg-gradient-glass backdrop-blur-sm p-8 rounded-3xl border border-border/20 shadow-elegant hover:shadow-deep transition-all duration-500 animate-scale-in"
+                  style={{ animationDelay: `${index * 200}ms` }}
+                >
+                  <div
+                    className={`w-16 h-16 bg-gradient-to-r ${value.gradient} rounded-2xl flex items-center justify-center mb-6 shadow-glow group-hover:scale-110 transition-transform duration-300`}
+                  >
+                    <div className="w-8 h-8 bg-primary-foreground rounded-lg"></div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
+                    {value.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">{value.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Call to Action */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-hero relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-mesh opacity-40"></div>
+          <div className="container mx-auto text-center relative z-10">
+            <h3 className="text-4xl sm:text-5xl font-bold mb-5 bg-gradient-to-r from-green-700 via-green-500 to-green-600 bg-clip-text text-transparent animate-pulse">
+              Наша цель: Финансовая свобода и здоровое старение
+            </h3>
+
+            <Button
+              size="lg"
+              onClick={() => setOpen(true)}
+              className="bg-accent text-accent-foreground hover:bg-accent/90 hover:shadow-deep transition-all duration-500 text-xl px-12 py-6 rounded-full shadow-elegant hover:scale-105"
+            >
+              Свяжитесь с нами
+            </Button>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+      <ChatbotSlideIn />
+    </div>
   );
 };
 
-export default FeaturesSection;
+export default About;
