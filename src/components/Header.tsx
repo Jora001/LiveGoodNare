@@ -67,13 +67,13 @@ Services            </a>
           <div className="md:hidden py-6 animate-fade-in bg-background/95 backdrop-blur-xl rounded-2xl mt-4 border border-border/50 shadow-elegant">
             <nav className="flex flex-col space-y-6 px-6">
               <a href="/about" className="text-foreground/80 hover:text-primary transition-colors font-medium">
-                About
+                обучение
               </a>
               <a href="/services" className="text-foreground/80 hover:text-primary transition-colors font-medium">
-                Services
+                продукты
               </a>
               <a href="/features" className="text-foreground/80 hover:text-primary transition-colors font-medium">
-                Features
+                бизнес
               </a>
               
               {/* Mobile Social Icons */}

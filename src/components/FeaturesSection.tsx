@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 // import ChatbotSlideIn from "@/components/ChatbotSlideIn";
 
 // Նկարները public/assets-ում են
-const screenshotImg = "/assets/Screenshot-2025-09-04-140721.png";
+const screenshotImg = "/assets/Screenshot20250904140721.png";
 const iImg = "/assets/i.webp";
 
 const About = () => {
