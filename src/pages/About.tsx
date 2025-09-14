@@ -18,7 +18,7 @@ const About = () => {
         <section className="pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-hero relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-mesh opacity-60"></div>
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-glow"></div>
-
+          
           <div className="container mx-auto relative z-10 text-center">
             <h1 className="text-5xl sm:text-6xl font-bold mb-8 bg-gradient-to-r from-green-700 via-green-500 to-green-900 bg-clip-text text-transparent animate-pulse">
               Зарастаем вместе с LiveGood
@@ -76,7 +76,7 @@ const About = () => {
                 У нас проводятся ежедневные обучающие сессии для команды из Армении в 12:00 и 21:00 по нашему Telegram-каналу, чтобы все были в курсе и развивались.
               </p>
             </div>
-
+            
             <div
               className="bg-gradient-glass backdrop-blur-sm p-10 rounded-3xl border border-border/20 shadow-elegant animate-fade-in"
               style={{ animationDelay: "200ms" }}
@@ -84,7 +84,9 @@ const About = () => {
               <div className="w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-2xl flex items-center justify-center mb-8 shadow-glow">
                 <div className="w-8 h-8 bg-primary-foreground rounded-lg"></div>
               </div>
-              <h3 className="text-3xl font-bold mb-6 text-secondary">Развитие команды и региональные тренинги</h3>
+              <h3 className="text-3xl font-bold mb-6 text-secondary">
+                Развитие команды и региональные тренинги
+              </h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Представители в Армении еженедельно проводят тренинги в разных регионах для расширения команды и повышения профессиональных навыков местных сотрудников.
               </p>
@@ -136,7 +138,9 @@ const About = () => {
                   <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">
                     {value.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">{value.description}</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {value.description}
+                  </p>
                 </div>
               ))}
             </div>
