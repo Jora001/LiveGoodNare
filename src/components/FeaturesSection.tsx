@@ -1,9 +1,9 @@
 // src/pages/About.tsx
 import { useState } from "react";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import ChatbotSlideIn from "@/components/ChatbotSlideIn";
+// import ChatbotSlideIn from "@/components/ChatbotSlideIn";
 
 // Նկարները public/assets-ում են
 const screenshotImg = "/assets/Screenshot-2025-09-04-140721.png";
@@ -128,8 +128,8 @@ const About = () => {
         </section>
       </main>
 
-      <Footer />
-      <ChatbotSlideIn />
+      {/* <Footer /> */}
+      {/* <ChatbotSlideIn /> */}
     </div>
   );
 };
