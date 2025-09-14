@@ -35,7 +35,7 @@ const Footer = () => {
     className="w-12 h-12 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary-foreground/20 transition-colors cursor-pointer group"
   >
     <img
-      src="/public/assets/5968804.png"
+      src="/assets/5968804.png"
       alt="Telegram"
       className="w-6 h-6 group-hover:scale-110 transition-transform"
     />
