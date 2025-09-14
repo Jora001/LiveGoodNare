@@ -123,7 +123,7 @@ const Features = () => {
 
           <div className="container mx-auto relative z-10">
             <div className="text-center mb-16 animate-fade-in">
-              <h1 className="text-5xl sm:text-6xl font-bold text-primary-foreground mb-8 bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent">
+              <h1 className="text-5xl sm:text-6xl font-bold mb-8 bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent">
                 Бонусы и Преимущества для Тебя
               </h1>
               <p className="text-2xl text-primary-foreground/90 max-w-4xl mx-auto leading-relaxed">
@@ -137,27 +137,19 @@ const Features = () => {
         {mainFeatures.map((feature, index) => (
           <section
             key={feature.id}
-            className={`py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden ${
-              index % 2 === 0 ? "bg-background" : "bg-muted/5"
-            }`}
+            className={`py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden ${index % 2 === 0 ? "bg-background" : "bg-muted/5"}`}
           >
             <div className="absolute inset-0 bg-gradient-mesh opacity-20"></div>
 
             <div className="container mx-auto relative z-10">
-              <div
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${
-                  index % 2 === 1 ? "lg:grid-flow-col" : ""
-                }`}
-              >
-                <div
-                  className={`${index % 2 === 1 ? "lg:order-2" : ""} animate-fade-in`}
-                >
+              <div className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${index % 2 === 1 ? "lg:grid-flow-col" : ""}`}>
+                <div className={`${index % 2 === 1 ? "lg:order-2" : ""} animate-fade-in`}>
                   <div className="mb-6">
                     <span className="text-sm font-semibold text-primary uppercase tracking-wider">
                       {feature.subtitle}
                     </span>
                   </div>
-                  <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 bg-gradient-primary bg-clip-text text-transparent">
+                  <h2 className="text-4xl sm:text-5xl font-bold mb-8 bg-gradient-primary bg-clip-text text-transparent">
                     {feature.title}
                   </h2>
                   <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
@@ -167,21 +159,17 @@ const Features = () => {
                   <div className="space-y-4 mb-10">
                     {feature.benefits.map((benefit, idx) => (
                       <div key={idx} className="flex items-start gap-4">
-                        <div
-                          className={`w-6 h-6 flex-shrink-0 bg-gradient-to-r ${feature.gradient} rounded-full flex items-center justify-center mt-0.5 shadow-glow`}
-                        >
+                        <div className={`w-6 h-6 flex-shrink-0 bg-gradient-to-r ${feature.gradient} rounded-full flex items-center justify-center mt-0.5 shadow-glow`}>
                           <div className="w-2 h-2 bg-white rounded-full"></div>
                         </div>
-                        <span className="text-lg text-muted-foreground">
-                          {benefit}
-                        </span>
+                        <span className="text-lg text-muted-foreground">{benefit}</span>
                       </div>
                     ))}
                   </div>
 
                   {feature.matrixInfo && (
                     <div className="mt-8">
-                      <h3 className="text-2xl font-semibold text-foreground mb-4">
+                      <h3 className="text-2xl font-semibold mb-4 bg-gradient-primary bg-clip-text text-transparent">
                         {feature.matrixInfo.title}
                       </h3>
                       <ul className="space-y-3">
@@ -197,13 +185,11 @@ const Features = () => {
 
                   {feature.extra && (
                     <div className="mt-8">
-                      <h3 className="text-2xl font-semibold text-foreground mb-4">{feature.extra.title}</h3>
+                      <h3 className="text-2xl font-semibold mb-4 bg-gradient-primary bg-clip-text text-transparent">{feature.extra.title}</h3>
                       <ul className="space-y-3">
                         {feature.extra.points.map((point, idx) => (
                           <li key={idx} className="flex items-start gap-3">
-                            <div
-                              className={`w-6 h-6 flex-shrink-0 bg-gradient-to-r ${feature.gradient} rounded-full flex items-center justify-center mt-0.5 shadow-glow`}
-                            >
+                            <div className={`w-6 h-6 flex-shrink-0 bg-gradient-to-r ${feature.gradient} rounded-full flex items-center justify-center mt-0.5 shadow-glow`}>
                               <div className="w-2 h-2 bg-white rounded-full"></div>
                             </div>
                             <span className="text-lg text-muted-foreground">{point}</span>
@@ -221,12 +207,8 @@ const Features = () => {
                   </Button>
                 </div>
 
-                <div
-                  className={`${index % 2 === 1 ? "lg:order-1" : ""} relative animate-scale-in`}
-                >
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} rounded-3xl blur-2xl opacity-30 animate-pulse-glow`}
-                  ></div>
+                <div className={`${index % 2 === 1 ? "lg:order-1" : ""} relative animate-scale-in`}>
+                  <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} rounded-3xl blur-2xl opacity-30 animate-pulse-glow`}></div>
                   <img
                     src={feature.image}
                     alt={`${feature.title} - Premium wellness technology`}
@@ -245,7 +227,7 @@ const Features = () => {
 
           <div className="container mx-auto relative z-10">
             <div className="text-center mb-16 animate-fade-in">
-              <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 bg-gradient-primary bg-clip-text text-transparent">
+              <h2 className="text-4xl sm:text-5xl font-bold mb-8 bg-gradient-primary bg-clip-text text-transparent">
                 Принятие решения — значит двигаться вперёд.
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -263,7 +245,7 @@ const Features = () => {
                   <div className="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
                     {feature.icon}
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
+                  <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">
                     {feature.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">

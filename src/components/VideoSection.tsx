@@ -13,7 +13,7 @@ const VideoSection = () => {
 
       <div className="container mx-auto text-center relative z-10">
         <div className="animate-fade-in">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 bg-gradient-primary bg-clip-text text-transparent">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-8 bg-gradient-primary bg-clip-text text-transparent">
             Здоровье и успех в твоих руках
           </h2>
           <p className="text-2xl text-muted-foreground mb-16 max-w-3xl mx-auto font-light">

@@ -12,7 +12,7 @@ const Header = () => {
        <div className="flex items-center">
   <a href="/">
     <img
-      src="/public/assets/logo.png"
+      src="/public/assets/logo.jpg"
       alt="LiveGood Logo"
       className="h-12 md:h-16 w-auto"
     />
