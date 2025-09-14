@@ -55,7 +55,7 @@ const About = () => {
             <div className="relative animate-scale-in order-1 lg:order-2">
               <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-2xl opacity-30 animate-pulse-glow"></div>
               <img
-                src="/assets/Screenshot 2025-09-04 140721.png"
+                src="/livegood-visual-spark/public/assets/Screenshot20250904140721.png"
                 alt="LiveGood leadership team"
                 className="relative z-10 w-full rounded-3xl shadow-deep border-4 border-primary/20"
               />

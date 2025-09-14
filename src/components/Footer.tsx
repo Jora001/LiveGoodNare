@@ -49,7 +49,7 @@ const Footer = () => {
     className="w-12 h-12 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary-foreground/20 transition-colors cursor-pointer group"
   >
     <img
-      src="/public/assets/15707820.png"
+      src="/assets/15707820.png"
       alt="WhatsApp"
       className="w-6 h-6 group-hover:scale-110 transition-transform"
     />
@@ -61,7 +61,7 @@ const Footer = () => {
     className="w-12 h-12 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary-foreground/20 transition-colors cursor-pointer group"
   >
     <img
-      src="/public/assets/5968534.png"
+      src="/assets/5968534.png"
       alt="Phone"
       className="w-6 h-6 group-hover:scale-110 transition-transform"
     />
@@ -73,7 +73,7 @@ const Footer = () => {
   className="w-12 h-12 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary-foreground/20 transition-colors cursor-pointer group"
 >
   <img 
-    src="/public/assets/174883.png" 
+    src="/assets/174883.png" 
     alt="Email" 
     className="w-6 h-6 group-hover:scale-110 transition-transform" 
   />
