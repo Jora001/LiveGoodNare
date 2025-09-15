@@ -33,7 +33,7 @@ const Header = () => {
             {/* Social Icons */}
             <div className="flex items-center space-x-4">
               <a 
-                href="https://t.me/livegood" 
+                href="https://t.me/https://t.me/+3RTG48rh-bZlMzUy" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center hover:shadow-glow transition-all duration-300 hover:scale-110"
@@ -42,7 +42,7 @@ const Header = () => {
                 <Send size={18} className="text-primary-foreground" />
               </a>
               <a 
-                href="https://wa.me/1234567890" 
+                href="https://wa.me/37493097970" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gradient-to-r from-secondary to-accent rounded-full flex items-center justify-center hover:shadow-glow transition-all duration-300 hover:scale-110"
@@ -79,7 +79,7 @@ const Header = () => {
               {/* Mobile Social Icons */}
               <div className="flex items-center space-x-4 pt-4 border-t border-border/20">
                 <a 
-                  href="https://t.me/livegood" 
+                  href="https://t.me/https://t.me/+3RTG48rh-bZlMzUy" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex-1 bg-gradient-primary text-primary-foreground py-3 px-6 rounded-full flex items-center justify-center gap-3 hover:shadow-glow transition-all duration-300 font-semibold"
@@ -88,7 +88,7 @@ const Header = () => {
                   Telegram
                 </a>
                 <a 
-                  href="https://wa.me/1234567890" 
+                  href="https://wa.me/37493097970" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex-1 bg-gradient-to-r from-secondary to-accent text-primary-foreground py-3 px-6 rounded-full flex items-center justify-center gap-3 hover:shadow-glow transition-all duration-300 font-semibold"
