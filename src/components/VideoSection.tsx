@@ -29,7 +29,7 @@ const VideoSection = () => {
                 onClick={() => {
                   const iframe = document.querySelector<HTMLIFrameElement>("iframe");
                   if (iframe) {
-                    iframe.src = "https://www.youtube.com/embed/W5g9-JIObX4?autoplay=1";
+                    iframe.src = "https://www.youtube.com/embed/vgvDdthN0vw";
                   }
                 }}
               >
@@ -43,7 +43,7 @@ const VideoSection = () => {
               {/* YouTube iframe */}
               <iframe
                 className="w-full h-full opacity-80 group-hover:opacity-100 transition-opacity duration-500"
-                src="https://www.youtube.com/embed/W5g9-JIObX4"
+                src="https://www.youtube.com/embed/vgvDdthN0vw"
                 title="LiveGood Introduction Video - Transform Your Health Journey"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

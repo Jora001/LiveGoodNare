@@ -22,13 +22,13 @@ const Header = () => {
           
           <nav className="hidden md:flex items-center space-x-10">
             <a href="/about" className="text-foreground/80 hover:text-primary transition-all duration-300 font-medium hover:scale-105">
-              About
+              Oбучение
             </a>
             <a href="/services" className="text-foreground/80 hover:text-primary transition-all duration-300 font-medium hover:scale-105">
-              Features
+              Продукты
             </a>
             <a href="/features" className="text-foreground/80 hover:text-primary transition-all duration-300 font-medium hover:scale-105">
-Services            </a>
+Бизнес            </a>
             
             {/* Social Icons */}
             <div className="flex items-center space-x-4">
