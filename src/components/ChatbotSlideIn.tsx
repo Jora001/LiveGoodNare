@@ -57,7 +57,7 @@ const ChatbotSlideIn = () => {
               <FaPhone /> +374 93 225 991
             </a>
             <a
-              href="https://t.me/YourTelegramUsername"
+              href="https://t.me/https://t.me/+3RTG48rh-bZlMzUy"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 justify-center bg-blue-100 text-blue-700 py-1.5 rounded-lg text-sm hover:bg-blue-200 transition"
